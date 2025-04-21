@@ -1,1 +1,0 @@
-# Level UP GAME Web（20ゲーム対応）
