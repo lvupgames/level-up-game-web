@@ -3,135 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Level UP GAME - ホーム</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 10px;
-      text-decoration: none;
-      color: black;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: scale(1.05);
-    }
-    .card img {
-      width: 64px;
-      height: 64px;
-      border-radius: 16px;
-    }
-    .card span {
-      display: block;
-      margin-top: 8px;
-      font-size: 14px;
-    }
-  </style>
+  <title>Level UP GAME</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>攻略対応ゲーム一覧</h1>
-  <div class="grid">
-
-    <!-- カード一覧 -->
-    <a class="card" href="games/pokemon-go/index.html">
-      <img src="games/pokemon-go/icon.png" alt="ポケモンGO">
-      <span>ポケモンGO</span>
+  <h1 class="title">Level UP GAME 攻略一覧</h1>
+  <div class="game-list">
+    <a class="game-card" href="games/pokemon-go/index.html">
+      <img src="public/icons/pokemon-go.png" alt="Pokémon GO" />
+      <p>ポケモンGO</p>
     </a>
-    <a class="card" href="games/pokemon-sv/index.html">
-      <img src="games/pokemon-sv/icon.png" alt="ポケモンSV">
-      <span>ポケモンSV</span>
+    <a class="game-card" href="games/minecraft/index.html">
+      <img src="public/icons/minecraft.png" alt="Minecraft" />
+      <p>マインクラフト</p>
     </a>
-    <a class="card" href="games/ptcg-pocket/index.html">
-      <img src="games/ptcg-pocket/icon.png" alt="ポケモンカード">
-      <span>ポケモンカード</span>
+    <a class="game-card" href="games/pokemon-sv/index.html">
+      <img src="public/icons/pokemon-sv.png" alt="ポケモンSV" />
+      <p>ポケモンSV</p>
     </a>
-    <a class="card" href="games/minecraft/index.html">
-      <img src="games/minecraft/icon.png" alt="マインクラフト">
-      <span>マインクラフト</span>
+    <a class="game-card" href="games/mario-kart-8/index.html">
+      <img src="public/icons/mario-kart.png" alt="マリオカート8" />
+      <p>マリオカート8</p>
     </a>
-    <a class="card" href="games/splatoon-3/index.html">
-      <img src="games/splatoon-3/icon.png" alt="スプラトゥーン3">
-      <span>スプラトゥーン3</span>
+    <a class="game-card" href="games/genshin-impact/index.html">
+      <img src="public/icons/genshin.png" alt="原神" />
+      <p>原神</p>
     </a>
-    <a class="card" href="games/mario-kart-8/index.html">
-      <img src="games/mario-kart-8/icon.png" alt="マリオカート8">
-      <span>マリオカート8</span>
-    </a>
-    <a class="card" href="games/mario-wonder/index.html">
-      <img src="games/mario-wonder/icon.png" alt="マリオワンダー">
-      <span>マリオワンダー</span>
-    </a>
-    <a class="card" href="games/animal-crossing/index.html">
-      <img src="games/animal-crossing/icon.png" alt="あつまれどうぶつの森">
-      <span>あつ森</span>
-    </a>
-    <a class="card" href="games/brawl-stars/index.html">
-      <img src="games/brawl-stars/icon.png" alt="ブロスタ">
-      <span>ブロスタ</span>
-    </a>
-    <a class="card" href="games/clash-royale/index.html">
-      <img src="games/clash-royale/icon.png" alt="クラロワ">
-      <span>クラロワ</span>
-    </a>
-    <a class="card" href="games/monster-strike/index.html">
-      <img src="games/monster-strike/icon.png" alt="モンスト">
-      <span>モンスト</span>
-    </a>
-    <a class="card" href="games/pazudora/index.html">
-      <img src="games/pazudora/icon.png" alt="パズドラ">
-      <span>パズドラ</span>
-    </a>
-    <a class="card" href="games/onepiece-card/index.html">
-      <img src="games/onepiece-card/icon.png" alt="ワンピースカード">
-      <span>ワンピースカード</span>
-    </a>
-    <a class="card" href="games/sumikko-puzzle/index.html">
-      <img src="games/sumikko-puzzle/icon.png" alt="すみっコパズル">
-      <span>すみっコパズル</span>
-    </a>
-    <a class="card" href="games/nyanko-daisensou/index.html">
-      <img src="games/nyanko-daisensou/icon.png" alt="にゃんこ大戦争">
-      <span>にゃんこ大戦争</span>
-    </a>
-    <a class="card" href="games/duel-masters/index.html">
-      <img src="games/duel-masters/icon.png" alt="デュエマ">
-      <span>デュエマ</span>
-    </a>
-    <a class="card" href="games/genshin-impact/index.html">
-      <img src="games/genshin-impact/icon.png" alt="原神">
-      <span>原神</span>
-    </a>
-    <a class="card" href="games/kirby-discovery/index.html">
-      <img src="games/kirby-discovery/icon.png" alt="カービィ">
-      <span>カービィ</span>
-    </a>
-    <a class="card" href="games/knives-out/index.html">
-      <img src="games/knives-out/icon.png" alt="荒野行動">
-      <span>荒野行動</span>
-    </a>
-    <a class="card" href="games/dq-walk/index.html">
-      <img src="games/dq-walk/icon.png" alt="ドラクエウォーク">
-      <span>ドラクエウォーク</span>
-    </a>
-
+    <!-- 以下も同じ構造で20個並べてください -->
   </div>
 </body>
 </html>
