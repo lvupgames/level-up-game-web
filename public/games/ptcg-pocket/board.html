@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>ptcg-pocket 掲示板</title></head>
+<body>
+  <h1>ptcg-pocket 掲示板</h1>
+  <p>アイテム交換や質問はこちらから投稿できます。</p>
+  <form>
+    <textarea placeholder="投稿内容を入力してください"></textarea><br>
+    <button type="submit">投稿</button>
+  </form>
+  <div id="posts">
+    <p>（投稿はここに表示されます）</p>
+  </div>
+  
+<script>
+  const ngWords = ["ばか", "死ね", "殺す", "変態", "エロ"];
+  const form = document.querySelector("form");
+  const textarea = document.querySelector("textarea");
+  const posts = document.getElementById("posts");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const text = textarea.value;
+    if (ngWords.some(word => text.includes(word))) {
+      alert("この内容は不適切です。投稿できません。");
+      return;
+    }
+    const p = document.createElement("p");
+    p.textContent = text;
+    posts.appendChild(p);
+    textarea.value = "";
+  });
+</script>
+
+</body>
+</html>
