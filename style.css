@@ -1,1 +1,41 @@
-console.log("ページが正常に読み込まれました！");
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.title {
+  padding: 24px 0;
+  font-size: 24px;
+  background: #ffffff;
+  margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.game-card {
+  width: 90px;
+  text-decoration: none;
+  color: #333;
+}
+
+.game-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 6px;
+}
+
+.game-card p {
+  font-size: 12px;
+  margin: 0;
+}
